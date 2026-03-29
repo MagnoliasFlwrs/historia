@@ -33,3 +33,26 @@
         applyTheme(input.checked);
     });
 })();
+
+(function initDroprightLinks() {
+    const listTag = (el) => el.tagName === 'UL' || el.tagName === 'OL';
+
+    document.querySelectorAll('li').forEach((li) => {
+        if (![...li.children].some(listTag)) return;
+        const link = li.querySelector(':scope > a, :scope > button');
+        if (link) link.classList.add('dropright-link');
+    });
+
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileMenu) {
+        mobileMenu.querySelectorAll('.mobile-nav-panel--catalog button[data-mobile-cat]').forEach((btn) => {
+            const cat = btn.dataset.mobileCat;
+            if (
+                cat &&
+                mobileMenu.querySelector(`.mobile-sub-list[data-mobile-cat="${cat}"] li`)
+            ) {
+                btn.classList.add('dropright-link');
+            }
+        });
+    }
+})();

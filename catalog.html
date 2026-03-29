@@ -9,6 +9,206 @@
     <title>Каталог — Костюмы — Historia</title>
 </head>
 <body class="light-theme">
+<div class="overlay"></div>
+<div class="search-panel">
+    <div class="search-panel-container">
+        <div class="close-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#131C2C"/>
+            </svg>
+        </div>
+        <div class="content">
+            <div class="search-row">
+                <input type="text" placeholder="Что ищем?">
+                <button>Поиск</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="catalog-desktop-modal" id="catalog-desktop-modal" aria-hidden="true">
+    <div class="catalog-desktop-modal-container">
+        <button type="button" class="close-btn" aria-label="Закрыть каталог">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#F9FAFB"/>
+            </svg>
+        </button>
+        <div class="content catalog-desktop-modal-body">
+            <ul class="catalog-desktop-modal-list">
+                <li class="is-active" data-catalog-cat="suits" tabindex="0">Костюмы</li>
+                <li data-catalog-cat="shoes" tabindex="0">Обувь</li>
+                <li data-catalog-cat="knit" tabindex="0">Трикотаж</li>
+                <li data-catalog-cat="accessories" tabindex="0">Аксессуары</li>
+                <li data-catalog-cat="shirts" tabindex="0">Рубашки</li>
+                <li data-catalog-cat="jackets" tabindex="0">Пиджаки</li>
+                <li data-catalog-cat="pants" tabindex="0">Брюки</li>
+            </ul>
+            <div class="catalog-desktop-modal-subs">
+                <div id="catalog-sub-suits" class="catalog-desktop-modal-subpanel is-active">
+
+                    <ul class="catalog-desktop-modal-sublist">
+                        <li><a href="catalog.html">Черные</a></li>
+                        <li><a href="catalog.html">В клетку</a></li>
+                        <li><a href="catalog.html">Деловые</a></li>
+                        <li><a href="catalog.html">Классические</a></li>
+                        <li><a href="catalog.html">Свадебные</a></li>
+                    </ul>
+                </div>
+                <div id="catalog-sub-shoes" class="catalog-desktop-modal-subpanel">
+                    <div class="catalog-desktop-modal-rail" aria-hidden="true"></div>
+                    <ul class="catalog-desktop-modal-sublist">
+                        <li><a href="#">Классическая</a></li>
+                        <li><a href="#">Кроссовки</a></li>
+                        <li><a href="#">Ботинки</a></li>
+                        <li><a href="#">Лоферы</a></li>
+                    </ul>
+                </div>
+                <div id="catalog-sub-knit" class="catalog-desktop-modal-subpanel">
+                    <div class="catalog-desktop-modal-rail" aria-hidden="true"></div>
+                    <ul class="catalog-desktop-modal-sublist">
+                        <li><a href="#">Свитеры</a></li>
+                        <li><a href="#">Поло</a></li>
+                        <li><a href="#">Кардиганы</a></li>
+                    </ul>
+                </div>
+                <div id="catalog-sub-accessories" class="catalog-desktop-modal-subpanel">
+                    <div class="catalog-desktop-modal-rail" aria-hidden="true"></div>
+                    <ul class="catalog-desktop-modal-sublist">
+                        <li><a href="#">Галстуки</a></li>
+                        <li><a href="#">Ремни</a></li>
+                        <li><a href="#">Запонки</a></li>
+                    </ul>
+                </div>
+                <div id="catalog-sub-shirts" class="catalog-desktop-modal-subpanel">
+                    <div class="catalog-desktop-modal-rail" aria-hidden="true"></div>
+                    <ul class="catalog-desktop-modal-sublist">
+                        <li><a href="#">Однотонные</a></li>
+                        <li><a href="#">В полоску</a></li>
+                        <li><a href="#">С коротким рукавом</a></li>
+                    </ul>
+                </div>
+                <div id="catalog-sub-jackets" class="catalog-desktop-modal-subpanel">
+                    <div class="catalog-desktop-modal-rail" aria-hidden="true"></div>
+                    <ul class="catalog-desktop-modal-sublist">
+                        <li><a href="#">Пиджаки классические</a></li>
+                        <li><a href="#">Пиджаки casual</a></li>
+                    </ul>
+                </div>
+                <div id="catalog-sub-pants" class="catalog-desktop-modal-subpanel">
+                    <div class="catalog-desktop-modal-rail" aria-hidden="true"></div>
+                    <ul class="catalog-desktop-modal-sublist">
+                        <li><a href="#">Классические брюки</a></li>
+                        <li><a href="#">Чинос</a></li>
+                        <li><a href="#">Джинсы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-nav-depth="0">
+    <div class="mobile-head" data-show-back="false">
+        <a class="mobile-head-phone" href="tel:+375339902888">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M18.7494 14.2267V16.9364C18.7536 17.9723 17.8222 18.8373 16.7764 18.7429C7.75 18.75 0.75 11.685 0.757065 2.71919C0.662875 1.67895 1.52358 0.75106 2.55811 0.750088H5.27325C5.71247 0.745773 6.13828 0.901002 6.47131 1.18684C7.41813 1.99949 8.02713 4.75777 7.79281 5.85428C7.60987 6.71036 6.7469 7.30929 6.16019 7.89484C7.44858 10.1562 9.32465 12.0285 11.5905 13.3144C12.1772 12.7288 12.7773 11.8676 13.6351 11.685C14.7355 11.4508 17.5115 12.0606 18.3209 13.014C18.6079 13.3521 18.7604 13.7837 18.7494 14.2267Z" stroke="#F9FAFB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>+375 33 990-28-88</span>
+        </a>
+        <button type="button" class="mobile-nav-back" aria-label="Назад">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                      <path d="M7.70711 0.292893C8.09763 0.683418 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976318 7.31658 -0.0976317 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976312 7.31658 -0.0976311 7.70711 0.292893Z" fill="#ACB7CC"/>
+                    </svg>
+                </span>
+            Вернуться
+        </button>
+        <button type="button" class="burger-close-btn" aria-label="Закрыть меню">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#F9FAFB"/>
+            </svg>
+        </button>
+    </div>
+    <div class="mobile-body-inner">
+        <div class="mobile-nav-viewport">
+            <div class="mobile-nav-track" data-depth="0">
+                <div class="mobile-nav-panel mobile-nav-panel--root">
+                    <ul class="mobile-body">
+                        <li>
+                            <button type="button" class="dropright-link mobile-nav-to-catalog">Каталог</button>
+                        </li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Коллекции</a></li>
+                        <li><a href="#">Образы</a></li>
+                    </ul>
+                    <ul class="gray-list">
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Отзывы</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Магазины</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="#" class="facebook"></a>
+                        <a href="#" class="instagram"></a>
+                        <a href="#" class="telegram"></a>
+                        <a href="#" class="vk"></a>
+                    </div>
+                </div>
+                <div class="mobile-nav-panel mobile-nav-panel--catalog">
+                    <ul class="mobile-body">
+                        <li><button type="button" data-mobile-cat="suits">Костюмы</button></li>
+                        <li><button type="button" data-mobile-cat="shoes">Обувь</button></li>
+                        <li><button type="button" data-mobile-cat="knit">Трикотаж</button></li>
+                        <li><button type="button" data-mobile-cat="accessories">Аксессуары</button></li>
+                        <li><button type="button" data-mobile-cat="shirts">Рубашки</button></li>
+                        <li><button type="button" data-mobile-cat="jackets">Пиджаки</button></li>
+                        <li><button type="button" data-mobile-cat="pants">Брюки</button></li>
+                    </ul>
+                </div>
+                <div class="mobile-nav-panel mobile-nav-panel--subs">
+                    <ul class="mobile-body mobile-sub-list is-active" data-mobile-cat="suits">
+                        <li><a href="catalog.html">Черные</a></li>
+                        <li><a href="catalog.html">В клетку</a></li>
+                        <li><a href="catalog.html">Деловые</a></li>
+                        <li><a href="catalog.html">Классические</a></li>
+                        <li><a href="catalog.html">Свадебные</a></li>
+                    </ul>
+                    <ul class="mobile-body mobile-sub-list" data-mobile-cat="shoes">
+                        <li><a href="#">Классическая</a></li>
+                        <li><a href="#">Кроссовки</a></li>
+                        <li><a href="#">Ботинки</a></li>
+                        <li><a href="#">Лоферы</a></li>
+                    </ul>
+                    <ul class="mobile-body mobile-sub-list" data-mobile-cat="knit">
+                        <li><a href="#">Свитеры</a></li>
+                        <li><a href="#">Поло</a></li>
+                        <li><a href="#">Кардиганы</a></li>
+                    </ul>
+                    <ul class="mobile-body mobile-sub-list" data-mobile-cat="accessories">
+                        <li><a href="#">Галстуки</a></li>
+                        <li><a href="#">Ремни</a></li>
+                        <li><a href="#">Запонки</a></li>
+                    </ul>
+                    <ul class="mobile-body mobile-sub-list" data-mobile-cat="shirts">
+                        <li><a href="#">Однотонные</a></li>
+                        <li><a href="#">В полоску</a></li>
+                        <li><a href="#">С коротким рукавом</a></li>
+                    </ul>
+                    <ul class="mobile-body mobile-sub-list" data-mobile-cat="jackets">
+                        <li><a href="#">Пиджаки классические</a></li>
+                        <li><a href="#">Пиджаки casual</a></li>
+                    </ul>
+                    <ul class="mobile-body mobile-sub-list" data-mobile-cat="pants">
+                        <li><a href="#">Классические брюки</a></li>
+                        <li><a href="#">Чинос</a></li>
+                        <li><a href="#">Джинсы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <header class="header">
     <div class="header-dark-row">
         <div class="content">
@@ -89,14 +289,13 @@
                             </clipPath>
                         </defs>
                     </svg>
-
                 </a>
-                <div class="catalog-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                <button type="button" class="catalog-button" id="catalog-open-btn" aria-expanded="false" aria-controls="catalog-desktop-modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none" aria-hidden="true">
                         <path d="M0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447715 16 1C16 1.55228 15.5523 2 15 2H1C0.447715 2 0 1.55228 0 1ZM0 6C0 5.44772 0.447715 5 1 5H15C15.5523 5 16 5.44772 16 6C16 6.55228 15.5523 7 15 7H1C0.447715 7 0 6.55228 0 6ZM0 11C0 10.4477 0.447715 10 1 10H15C15.5523 10 16 10.4477 16 11C16 11.5523 15.5523 12 15 12H1C0.447715 12 0 11.5523 0 11Z" fill="white"/>
                     </svg>
                     <span>Каталог</span>
-                </div>
+                </button>
                 <ul>
                     <li><a href="">Новинки</a></li>
                     <li><a href="">Акции</a></li>
@@ -105,23 +304,29 @@
                 </ul>
             </div>
             <div class="buttons">
-                <div class="search">
+                <div class="search search-panel-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z" fill="#131C2C"/>
                     </svg>
                 </div>
-                <div class="favorite">
+                <div class="favorite active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M12 4.52765C9.64418 2.41689 6.02125 2.49347 3.75736 4.75736C1.41421 7.1005 1.41421 10.8995 3.75736 13.2426L10.5858 20.0711C11.3668 20.8521 12.6332 20.8521 13.4142 20.0711L20.2426 13.2426C22.5858 10.8995 22.5858 7.1005 20.2426 4.75736C17.9787 2.49347 14.3558 2.41689 12 4.52765ZM10.8284 6.17157L11.2929 6.63604C11.6834 7.02656 12.3166 7.02656 12.7071 6.63604L13.1716 6.17157C14.7337 4.60948 17.2663 4.60948 18.8284 6.17157C20.3905 7.73367 20.3905 10.2663 18.8284 11.8284L12 18.6569L5.17157 11.8284C3.60948 10.2663 3.60948 7.73367 5.17157 6.17157C6.73367 4.60948 9.26633 4.60948 10.8284 6.17157Z" fill="#131C2C"/>
                     </svg>
                 </div>
-                <div class="cart">
+                <div class="cart active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#131C2C"/>
                         <path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#131C2C"/>
                         <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#131C2C"/>
                     </svg>
+                    <span></span>
                 </div>
+            </div>
+            <div class="burger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17" fill="none">
+                    <path d="M0 1.41667C0 0.634263 0.634263 0 1.41667 0H21.25C22.0324 0 22.6667 0.634263 22.6667 1.41667C22.6667 2.19907 22.0324 2.83333 21.25 2.83333H1.41667C0.634263 2.83333 0 2.19907 0 1.41667ZM0 8.5C0 7.7176 0.634263 7.08333 1.41667 7.08333H21.25C22.0324 7.08333 22.6667 7.7176 22.6667 8.5C22.6667 9.2824 22.0324 9.91667 21.25 9.91667H1.41667C0.634263 9.91667 0 9.2824 0 8.5ZM0 15.5833C0 14.8009 0.634263 14.1667 1.41667 14.1667H21.25C22.0324 14.1667 22.6667 14.8009 22.6667 15.5833C22.6667 16.3657 22.0324 17 21.25 17H1.41667C0.634263 17 0 16.3657 0 15.5833Z" fill="#131C2C"/>
+                </svg>
             </div>
         </div>
     </div>
@@ -158,12 +363,17 @@
                 <div class="catalog-title-wrap">
                     <button type="button" class="catalog-title-btn" aria-expanded="false" aria-haspopup="true">
                         <span>Костюмы</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none" aria-hidden="true">
-                            <path d="M1 1L7 7L13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                            <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683418 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#0061DF"/>
                         </svg>
                     </button>
                     <div class="catalog-title-dropdown" id="catalog-cat-menu" hidden role="menu">
-                        <a href="#" role="menuitem" class="is-current">Костюмы</a>
+                        <a href="#" role="menuitem" class="is-current">
+                            Костюмы
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683418 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#0061DF"/>
+                            </svg>
+                        </a>
                         <a href="#" role="menuitem">Обувь</a>
                         <a href="#" role="menuitem">Трикотаж</a>
                         <a href="#" role="menuitem">Аксессуары</a>
@@ -175,7 +385,7 @@
                     </div>
                 </div>
                 <div class="catalog-tags" role="group" aria-label="Быстрые фильтры">
-                    <button type="button" class="catalog-tag catalog-tag--all">Все</button>
+                    <button type="button" class="catalog-tag catalog-tag--all catalog-tag--active">Все</button>
                     <button type="button" class="catalog-tag">С однобортным пиджаком</button>
                     <button type="button" class="catalog-tag">Костюм тройка (с жилетом)</button>
                     <button type="button" class="catalog-tag catalog-tag--active">
@@ -188,7 +398,7 @@
                     </button>
                 </div>
             </div>
-
+            <div class="divider"></div>
             <div class="catalog-toolbar catalog-toolbar--desktop">
                 <div class="catalog-filters-row">
                     <div class="catalog-filter-field">
@@ -196,8 +406,8 @@
                         <div class="catalog-select" data-placeholder="Выбрать">
                             <button type="button" class="catalog-select__trigger" aria-expanded="false" aria-haspopup="listbox">
                                 <span class="catalog-select__value" data-select-value>Выбрать</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
-                                    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                    <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683418 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#506282"/>
                                 </svg>
                             </button>
                             <div class="catalog-select__panel" hidden role="listbox">
@@ -226,13 +436,20 @@
                         <div class="catalog-select" data-placeholder="Выбрать">
                             <button type="button" class="catalog-select__trigger" aria-expanded="false" aria-haspopup="listbox">
                                 <span class="catalog-select__value" data-select-value>Выбрать</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
-                                    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                    <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683418 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#506282"/>
                                 </svg>
                             </button>
                             <div class="catalog-select__panel" hidden role="listbox">
                                 <div class="catalog-select__checkboxes">
-                                    <label class="custom-checkbox catalog-filter-checkbox catalog-filter-checkbox--color"><input class="hidden-checkbox" type="checkbox"><span class="catalog-color-swatch" style="background:#c45c26"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></span><span class="catalog-opt-text">Оранжевый</span><span class="checkbox"></span></label>
+                                    <label class="custom-checkbox catalog-filter-checkbox catalog-filter-checkbox--color">
+                                        <input class="hidden-checkbox" type="checkbox">
+                                        <span class="catalog-color-swatch" style="background:#c45c26">
+                                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+                                        </span>
+                                        <span class="catalog-opt-text">Оранжевый</span>
+                                        <span class="checkbox"></span>
+                                    </label>
                                     <label class="custom-checkbox catalog-filter-checkbox catalog-filter-checkbox--color"><input class="hidden-checkbox" type="checkbox"><span class="catalog-color-swatch" style="background:#2f5a9e"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></span><span class="catalog-opt-text">Синий</span><span class="checkbox"></span></label>
                                     <label class="custom-checkbox catalog-filter-checkbox catalog-filter-checkbox--color"><input class="hidden-checkbox" type="checkbox"><span class="catalog-color-swatch" style="background:#1a1a1a"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></span><span class="catalog-opt-text">Чёрный</span><span class="checkbox"></span></label>
                                     <label class="custom-checkbox catalog-filter-checkbox catalog-filter-checkbox--color"><input class="hidden-checkbox" type="checkbox"><span class="catalog-color-swatch" style="background:#f2f2f2"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#131c2c" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></span><span class="catalog-opt-text">Белый</span><span class="checkbox"></span></label>
@@ -246,8 +463,8 @@
                         <div class="catalog-select" data-placeholder="Выбрать">
                             <button type="button" class="catalog-select__trigger" aria-expanded="false" aria-haspopup="listbox">
                                 <span class="catalog-select__value" data-select-value>Выбрать</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
-                                    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                    <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683418 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#506282"/>
                                 </svg>
                             </button>
                             <div class="catalog-select__panel" hidden role="listbox">
@@ -261,31 +478,45 @@
                         </div>
                     </div>
                     <div class="catalog-filter-field catalog-filter-field--sort">
-                        <span class="catalog-filter-label" aria-hidden="true">&nbsp;</span>
                         <div class="catalog-select catalog-select--sort">
-                            <button type="button" class="catalog-select__trigger" aria-expanded="false" aria-haspopup="listbox">
+                            <button type="button" class="catalog-select__trigger catalog-sort__trigger"
+                                    aria-expanded="false"
+                                    aria-haspopup="listbox">
                                 <span class="catalog-sort-prefix">Упорядочить:</span>
                                 <span class="catalog-select__value" data-select-value>По убыванию цены</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none" aria-hidden="true">
-                                    <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                    <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683418 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#506282"/>
                                 </svg>
                             </button>
                             <div class="catalog-select__panel" hidden role="listbox">
                                 <button type="button" class="catalog-select__option is-selected" data-label="По убыванию цены">
                                     <span>По убыванию цены</span>
-                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                          viewBox="0 0 24 24" fill="none">
+                                        <path d="M16.8135 8.14434C17.0429 8.35401 17.0635 8.71519 16.8597 8.95107L10.9337 15.8082C10.8283 15.9302 10.6772 16 10.5185 16C10.3598 16 10.2087 15.9302 10.1033 15.8082L7.14033 12.3796C6.93649 12.1438 6.95715 11.7826 7.18647 11.5729C7.41579 11.3632 7.76694 11.3845 7.97079 11.6204L10.5185 14.5685L16.0292 8.1918C16.2331 7.95592 16.5842 7.93468 16.8135 8.14434Z" fill="#0061DF"/>
+                                    </svg>
                                 </button>
                                 <button type="button" class="catalog-select__option" data-label="По возрастанию цены">
                                     <span>По возрастанию цены</span>
-                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none">
+                                        <path d="M16.8135 8.14434C17.0429 8.35401 17.0635 8.71519 16.8597 8.95107L10.9337 15.8082C10.8283 15.9302 10.6772 16 10.5185 16C10.3598 16 10.2087 15.9302 10.1033 15.8082L7.14033 12.3796C6.93649 12.1438 6.95715 11.7826 7.18647 11.5729C7.41579 11.3632 7.76694 11.3845 7.97079 11.6204L10.5185 14.5685L16.0292 8.1918C16.2331 7.95592 16.5842 7.93468 16.8135 8.14434Z" fill="#0061DF"/>
+                                    </svg>
                                 </button>
                                 <button type="button" class="catalog-select__option" data-label="По новизне">
                                     <span>По новизне</span>
-                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none">
+                                        <path d="M16.8135 8.14434C17.0429 8.35401 17.0635 8.71519 16.8597 8.95107L10.9337 15.8082C10.8283 15.9302 10.6772 16 10.5185 16C10.3598 16 10.2087 15.9302 10.1033 15.8082L7.14033 12.3796C6.93649 12.1438 6.95715 11.7826 7.18647 11.5729C7.41579 11.3632 7.76694 11.3845 7.97079 11.6204L10.5185 14.5685L16.0292 8.1918C16.2331 7.95592 16.5842 7.93468 16.8135 8.14434Z" fill="#0061DF"/>
+                                    </svg>
                                 </button>
                                 <button type="button" class="catalog-select__option" data-label="По умолчанию">
                                     <span>По умолчанию</span>
-                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none">
+                                        <path d="M16.8135 8.14434C17.0429 8.35401 17.0635 8.71519 16.8597 8.95107L10.9337 15.8082C10.8283 15.9302 10.6772 16 10.5185 16C10.3598 16 10.2087 15.9302 10.1033 15.8082L7.14033 12.3796C6.93649 12.1438 6.95715 11.7826 7.18647 11.5729C7.41579 11.3632 7.76694 11.3845 7.97079 11.6204L10.5185 14.5685L16.0292 8.1918C16.2331 7.95592 16.5842 7.93468 16.8135 8.14434Z" fill="#0061DF"/>
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -294,33 +525,25 @@
             </div>
 
             <div class="catalog-toolbar catalog-toolbar--mobile">
-                <div class="catalog-mobile-bar">
-                    <div class="catalog-mobile-bar__left">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                            <path d="M4 6H20M7 12H17M10 18H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                        Фильтр
-                    </div>
-                    <button type="button" class="catalog-mobile-toggle" aria-expanded="false" aria-controls="catalog-mobile-panel">+</button>
-                </div>
-                <div class="catalog-mobile-panel" id="catalog-mobile-panel" hidden>
-                    <div class="catalog-mobile-panel__head">
-                        <div class="catalog-mobile-panel__title">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                <path d="M4 6H20M7 12H17M10 18H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
+                <div class="catalog-mobile-filter">
+                    <div class="catalog-mobile-bar" id="catalog-mobile-bar-btn" tabindex="0" aria-expanded="false" aria-controls="catalog-mobile-panel">
+                        <span class="catalog-mobile-bar__left">
                             Фильтр
-                        </div>
-                        <button type="button" class="catalog-mobile-reset">Сбросить</button>
-                        <button type="button" class="catalog-mobile-toggle" aria-expanded="true" aria-controls="catalog-mobile-panel">−</button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none" aria-hidden="true">
+                                <path d="M0.75 0.75L5.75 8.75V14.75L11.75 17.75V8.75L16.75 0.75H0.75Z" stroke="#131C2C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <button type="button" class="catalog-mobile-reset" hidden>Сбросить</button>
+                        <span class="catalog-mobile-bar__chevron" aria-hidden="true">+</span>
                     </div>
-                    <div class="catalog-mobile-cats">
+                    <div class="catalog-mobile-panel" id="catalog-mobile-panel" hidden>
+                        <div class="catalog-mobile-cats">
                         <label class="custom-checkbox catalog-filter-checkbox"><input class="hidden-checkbox" type="checkbox"><span class="catalog-opt-text">Смокинги</span><span class="checkbox"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></span></label>
                         <label class="custom-checkbox catalog-filter-checkbox"><input class="hidden-checkbox" type="checkbox"><span class="catalog-opt-text">С однобортным пиджаком</span><span class="checkbox"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></span></label>
                         <label class="custom-checkbox catalog-filter-checkbox"><input class="hidden-checkbox" type="checkbox"><span class="catalog-opt-text">С двубортным пиджаком</span><span class="checkbox"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></span></label>
                         <label class="custom-checkbox catalog-filter-checkbox"><input class="hidden-checkbox" type="checkbox"><span class="catalog-opt-text">Костюм тройка (с жилетом)</span><span class="checkbox"><svg class="checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></span></label>
-                    </div>
-                    <div class="catalog-mobile-fields">
+                        </div>
+                        <div class="catalog-mobile-fields">
                         <div class="catalog-mobile-field">
                             <span class="catalog-filter-label">Размер</span>
                             <div class="catalog-select" data-placeholder="Выбрать">
@@ -375,173 +598,198 @@
                                 </div>
                             </div>
                         </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-mobile-sort">
+                    <div class="catalog-filter-field catalog-filter-field--sort">
+                        <div class="catalog-select catalog-select--sort">
+                            <button type="button" class="catalog-select__trigger catalog-sort__trigger"
+                                    aria-expanded="false"
+                                    aria-haspopup="listbox">
+                                <span class="catalog-sort-prefix">Упорядочить:</span>
+                                <span class="catalog-select__value" data-select-value>По убыванию цены</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                    <path d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683418 14.0976 1.31658 13.7071 1.70711L7.70711 7.70711C7.31658 8.09763 6.68342 8.09763 6.29289 7.70711L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683418 0.292893 0.292893Z" fill="#506282"/>
+                                </svg>
+                            </button>
+                            <div class="catalog-select__panel" hidden role="listbox">
+                                <button type="button" class="catalog-select__option is-selected" data-label="По убыванию цены">
+                                    <span>По убыванию цены</span>
+
+                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                          viewBox="0 0 24 24" fill="none">
+                                        <path d="M16.8135 8.14434C17.0429 8.35401 17.0635 8.71519 16.8597 8.95107L10.9337 15.8082C10.8283 15.9302 10.6772 16 10.5185 16C10.3598 16 10.2087 15.9302 10.1033 15.8082L7.14033 12.3796C6.93649 12.1438 6.95715 11.7826 7.18647 11.5729C7.41579 11.3632 7.76694 11.3845 7.97079 11.6204L10.5185 14.5685L16.0292 8.1918C16.2331 7.95592 16.5842 7.93468 16.8135 8.14434Z" fill="#0061DF"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="catalog-select__option" data-label="По возрастанию цены">
+                                    <span>По возрастанию цены</span>
+                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none">
+                                        <path d="M16.8135 8.14434C17.0429 8.35401 17.0635 8.71519 16.8597 8.95107L10.9337 15.8082C10.8283 15.9302 10.6772 16 10.5185 16C10.3598 16 10.2087 15.9302 10.1033 15.8082L7.14033 12.3796C6.93649 12.1438 6.95715 11.7826 7.18647 11.5729C7.41579 11.3632 7.76694 11.3845 7.97079 11.6204L10.5185 14.5685L16.0292 8.1918C16.2331 7.95592 16.5842 7.93468 16.8135 8.14434Z" fill="#0061DF"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="catalog-select__option" data-label="По новизне">
+                                    <span>По новизне</span>
+                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none">
+                                        <path d="M16.8135 8.14434C17.0429 8.35401 17.0635 8.71519 16.8597 8.95107L10.9337 15.8082C10.8283 15.9302 10.6772 16 10.5185 16C10.3598 16 10.2087 15.9302 10.1033 15.8082L7.14033 12.3796C6.93649 12.1438 6.95715 11.7826 7.18647 11.5729C7.41579 11.3632 7.76694 11.3845 7.97079 11.6204L10.5185 14.5685L16.0292 8.1918C16.2331 7.95592 16.5842 7.93468 16.8135 8.14434Z" fill="#0061DF"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="catalog-select__option" data-label="По умолчанию">
+                                    <span>По умолчанию</span>
+                                    <svg class="catalog-select__check" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none">
+                                        <path d="M16.8135 8.14434C17.0429 8.35401 17.0635 8.71519 16.8597 8.95107L10.9337 15.8082C10.8283 15.9302 10.6772 16 10.5185 16C10.3598 16 10.2087 15.9302 10.1033 15.8082L7.14033 12.3796C6.93649 12.1438 6.95715 11.7826 7.18647 11.5729C7.41579 11.3632 7.76694 11.3845 7.97079 11.6204L10.5185 14.5685L16.0292 8.1918C16.2331 7.95592 16.5842 7.93468 16.8135 8.14434Z" fill="#0061DF"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="catalog-grid">
-                <article class="catalog-card">
-                    <a href="productPage.html" class="catalog-card__img-link">
-                        <span class="catalog-card__badge">Акция</span>
-                        <img src="./src/images/productPage/0a44be95f44346c9476ad5570ddc2d31d4a0e093.jpg" width="400" height="533" alt="Костюм бежевый с вертикальной фактурой с жилетом">
-                    </a>
-                    <div class="catalog-card__body">
-                        <div class="catalog-card__prices">
-                            <div class="catalog-card__price-row">
-                                <span class="catalog-card__price">760</span>
-                                <span class="catalog-card__currency">BYN</span>
-                            </div>
-                            <span class="catalog-card__old">860</span>
-                        </div>
-                        <h2 class="catalog-card__title">Костюм бежевый с вертикальной фактурой с жилетом</h2>
-                        <a class="catalog-card__view" href="productPage.html">Смотреть <span aria-hidden="true">→</span></a>
-                        <button type="button" class="catalog-card__cart">
-                            В корзину
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#318AFF"/><path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#318AFF"/><path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#318AFF"/></svg>
-                        </button>
+        </div>
+    </section>
+    <section class="catalog-list">
+        <div class="content">
+            <div class="product-items">
+                <a href="#" class="product-card">
+                    <div class="img">
+                        <span class="badge">Акция</span>
+                        <img src="./src/images/productPage/0a44be95f44346c9476ad5570ddc2d31d4a0e093.jpg" alt="product-card-image">
                     </div>
-                </article>
-                <article class="catalog-card">
-                    <a href="productPage.html" class="catalog-card__img-link">
-                        <img src="./src/images/productPage/5a555e0c328257cecbf5f25018127e631105f881.jpg" width="400" height="533" alt="Костюм классический тёмно-синий">
-                    </a>
-                    <div class="catalog-card__body">
-                        <div class="catalog-card__prices">
-                            <div class="catalog-card__price-row">
-                                <span class="catalog-card__price">1&nbsp;760</span>
-                                <span class="catalog-card__currency">BYN</span>
+                    <div class="product-card-info">
+                        <div class="price">
+                            <p class="current-price">760</p>
+                            <div class="old-price-container">
+                                <p class="old-price">860</p>
+                                <span class="currency">BYN</span>
                             </div>
                         </div>
-                        <h2 class="catalog-card__title">Костюм классический тёмно-синий двубортный</h2>
-                        <a class="catalog-card__view" href="productPage.html">Смотреть <span aria-hidden="true">→</span></a>
-                        <button type="button" class="catalog-card__cart">
-                            В корзину
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#318AFF"/><path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#318AFF"/><path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#318AFF"/></svg>
-                        </button>
-                    </div>
-                </article>
-                <article class="catalog-card">
-                    <a href="productPage.html" class="catalog-card__img-link">
-                        <span class="catalog-card__badge">Акция</span>
-                        <img src="./src/images/productPage/a0fda318c16cec12bbfdf5834ee4ecd3b854162f.jpg" width="400" height="533" alt="Смокинг чёрный">
-                    </a>
-                    <div class="catalog-card__body">
-                        <div class="catalog-card__prices">
-                            <div class="catalog-card__price-row">
-                                <span class="catalog-card__price">920</span>
-                                <span class="catalog-card__currency">BYN</span>
-                            </div>
-                            <span class="catalog-card__old">1&nbsp;100</span>
+                        <p class="title">Костюм бежевый с вертикальной фактурой с жилетом</p>
+                        <div class="link">
+                            <span>Смотреть</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                <path d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C15.8946 6.48043 16 6.73478 16 7C16 7.26522 15.8946 7.51957 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447715 8 0 7.55229 0 7C0 6.44772 0.447715 6 1 6L12.5858 6L8.29289 1.70711C7.90237 1.31658 7.90237 0.683417 8.29289 0.292893Z" fill="#ACB7CC"/>
+                            </svg>
                         </div>
-                        <h2 class="catalog-card__title">Смокинг чёрный с атласными лацканами</h2>
-                        <a class="catalog-card__view" href="productPage.html">Смотреть <span aria-hidden="true">→</span></a>
-                        <button type="button" class="catalog-card__cart">
+                        <button>
                             В корзину
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#318AFF"/><path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#318AFF"/><path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#318AFF"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4.1421 4.00002L6.00913 16.1357C6.02271 16.2359 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2874L21.9578 6.28736C22.0487 5.98459 21.991 5.65669 21.8023 5.40308C21.6136 5.14948 21.3161 5.00002 21 5.00002H6.31948L5.99058 2.86221C5.97826 2.77282 5.95413 2.68721 5.91981 2.607C5.85751 2.46092 5.76213 2.33439 5.64429 2.23521C5.53497 2.14302 5.40561 2.07384 5.26367 2.03514C5.17434 2.01068 5.0806 1.99842 4.9847 2.00002H3C2.44772 2.00002 2 2.44773 2 3.00002C2 3.5523 2.44772 4.00002 3 4.00002H4.1421ZM7.85794 15L6.62717 7.00002H19.656L17.256 15H7.85794Z" fill="#0061DF"/>
+                                <path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#0061DF"/>
+                                <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#0061DF"/>
+                            </svg>
                         </button>
                     </div>
-                </article>
-                <article class="catalog-card">
-                    <a href="productPage.html" class="catalog-card__img-link">
-                        <img src="./src/images/productPage/0a44be95f44346c9476ad5570ddc2d31d4a0e093.jpg" width="400" height="533" alt="Костюм тройка серый">
-                    </a>
-                    <div class="catalog-card__body">
-                        <div class="catalog-card__prices">
-                            <div class="catalog-card__price-row">
-                                <span class="catalog-card__price">1&nbsp;240</span>
-                                <span class="catalog-card__currency">BYN</span>
+
+                </a>
+                <a href="#" class="product-card">
+                    <div class="img">
+                        <span class="badge">Акция</span>
+                        <img src="./src/images/productPage/5a555e0c328257cecbf5f25018127e631105f881.jpg" alt="product-card-image">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="price">
+                            <p class="current-price">1760</p>
+                            <div class="old-price-container">
+                                <span class="currency">BYN</span>
                             </div>
                         </div>
-                        <h2 class="catalog-card__title">Костюм тройка серый в клетку</h2>
-                        <a class="catalog-card__view" href="productPage.html">Смотреть <span aria-hidden="true">→</span></a>
-                        <button type="button" class="catalog-card__cart">
-                            В корзину
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#318AFF"/><path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#318AFF"/><path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#318AFF"/></svg>
-                        </button>
-                    </div>
-                </article>
-                <article class="catalog-card">
-                    <a href="productPage.html" class="catalog-card__img-link">
-                        <span class="catalog-card__badge">Акция</span>
-                        <img src="./src/images/productPage/5a555e0c328257cecbf5f25018127e631105f881.jpg" width="400" height="533" alt="Костюм slim fit">
-                    </a>
-                    <div class="catalog-card__body">
-                        <div class="catalog-card__prices">
-                            <div class="catalog-card__price-row">
-                                <span class="catalog-card__price">890</span>
-                                <span class="catalog-card__currency">BYN</span>
-                            </div>
-                            <span class="catalog-card__old">990</span>
+                        <p class="title">Костюм бежевый </p>
+                        <div class="link">
+                            <span>Смотреть</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                <path d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C15.8946 6.48043 16 6.73478 16 7C16 7.26522 15.8946 7.51957 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447715 8 0 7.55229 0 7C0 6.44772 0.447715 6 1 6L12.5858 6L8.29289 1.70711C7.90237 1.31658 7.90237 0.683417 8.29289 0.292893Z" fill="#ACB7CC"/>
+                            </svg>
                         </div>
-                        <h2 class="catalog-card__title">Костюм двойка slim fit графит</h2>
-                        <a class="catalog-card__view" href="productPage.html">Смотреть <span aria-hidden="true">→</span></a>
-                        <button type="button" class="catalog-card__cart">
+                        <button>
                             В корзину
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#318AFF"/><path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#318AFF"/><path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#318AFF"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4.1421 4.00002L6.00913 16.1357C6.02271 16.2359 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2874L21.9578 6.28736C22.0487 5.98459 21.991 5.65669 21.8023 5.40308C21.6136 5.14948 21.3161 5.00002 21 5.00002H6.31948L5.99058 2.86221C5.97826 2.77282 5.95413 2.68721 5.91981 2.607C5.85751 2.46092 5.76213 2.33439 5.64429 2.23521C5.53497 2.14302 5.40561 2.07384 5.26367 2.03514C5.17434 2.01068 5.0806 1.99842 4.9847 2.00002H3C2.44772 2.00002 2 2.44773 2 3.00002C2 3.5523 2.44772 4.00002 3 4.00002H4.1421ZM7.85794 15L6.62717 7.00002H19.656L17.256 15H7.85794Z" fill="#0061DF"/>
+                                <path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#0061DF"/>
+                                <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#0061DF"/>
+                            </svg>
                         </button>
                     </div>
-                </article>
-                <article class="catalog-card">
-                    <a href="productPage.html" class="catalog-card__img-link">
-                        <img src="./src/images/productPage/a0fda318c16cec12bbfdf5834ee4ecd3b854162f.jpg" width="400" height="533" alt="Пиджак и брюки">
-                    </a>
-                    <div class="catalog-card__body">
-                        <div class="catalog-card__prices">
-                            <div class="catalog-card__price-row">
-                                <span class="catalog-card__price">640</span>
-                                <span class="catalog-card__currency">BYN</span>
+
+                </a>
+                <a href="#" class="product-card">
+                    <div class="img">
+                        <span class="badge">Акция</span>
+                        <img src="./src/images/productPage/0a44be95f44346c9476ad5570ddc2d31d4a0e093.jpg" alt="product-card-image">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="price">
+                            <p class="current-price">760</p>
+                            <div class="old-price-container">
+                                <p class="old-price">860</p>
+                                <span class="currency">BYN</span>
                             </div>
                         </div>
-                        <h2 class="catalog-card__title">Костюм однобортный коричневый</h2>
-                        <a class="catalog-card__view" href="productPage.html">Смотреть <span aria-hidden="true">→</span></a>
-                        <button type="button" class="catalog-card__cart">
-                            В корзину
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#318AFF"/><path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#318AFF"/><path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#318AFF"/></svg>
-                        </button>
-                    </div>
-                </article>
-                <article class="catalog-card">
-                    <a href="productPage.html" class="catalog-card__img-link">
-                        <img src="./src/images/productPage/0a44be95f44346c9476ad5570ddc2d31d4a0e093.jpg" width="400" height="533" alt="Костюм синий">
-                    </a>
-                    <div class="catalog-card__body">
-                        <div class="catalog-card__prices">
-                            <div class="catalog-card__price-row">
-                                <span class="catalog-card__price">1&nbsp;530</span>
-                                <span class="catalog-card__currency">BYN</span>
-                            </div>
-                            <span class="catalog-card__old">1&nbsp;800</span>
+                        <p class="title">Костюм бежевый с вертикальной фактурой с жилетом</p>
+                        <div class="link">
+                            <span>Смотреть</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                <path d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C15.8946 6.48043 16 6.73478 16 7C16 7.26522 15.8946 7.51957 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447715 8 0 7.55229 0 7C0 6.44772 0.447715 6 1 6L12.5858 6L8.29289 1.70711C7.90237 1.31658 7.90237 0.683417 8.29289 0.292893Z" fill="#ACB7CC"/>
+                            </svg>
                         </div>
-                        <h2 class="catalog-card__title">Костюм деловой синий в полоску</h2>
-                        <a class="catalog-card__view" href="productPage.html">Смотреть <span aria-hidden="true">→</span></a>
-                        <button type="button" class="catalog-card__cart">
+                        <button>
                             В корзину
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#318AFF"/><path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#318AFF"/><path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#318AFF"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4.1421 4.00002L6.00913 16.1357C6.02271 16.2359 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2874L21.9578 6.28736C22.0487 5.98459 21.991 5.65669 21.8023 5.40308C21.6136 5.14948 21.3161 5.00002 21 5.00002H6.31948L5.99058 2.86221C5.97826 2.77282 5.95413 2.68721 5.91981 2.607C5.85751 2.46092 5.76213 2.33439 5.64429 2.23521C5.53497 2.14302 5.40561 2.07384 5.26367 2.03514C5.17434 2.01068 5.0806 1.99842 4.9847 2.00002H3C2.44772 2.00002 2 2.44773 2 3.00002C2 3.5523 2.44772 4.00002 3 4.00002H4.1421ZM7.85794 15L6.62717 7.00002H19.656L17.256 15H7.85794Z" fill="#0061DF"/>
+                                <path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#0061DF"/>
+                                <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#0061DF"/>
+                            </svg>
                         </button>
                     </div>
-                </article>
-                <article class="catalog-card">
-                    <a href="productPage.html" class="catalog-card__img-link">
-                        <span class="catalog-card__badge">Акция</span>
-                        <img src="./src/images/productPage/5a555e0c328257cecbf5f25018127e631105f881.jpg" width="400" height="533" alt="Костюм вечерний">
-                    </a>
-                    <div class="catalog-card__body">
-                        <div class="catalog-card__prices">
-                            <div class="catalog-card__price-row">
-                                <span class="catalog-card__price">2&nbsp;100</span>
-                                <span class="catalog-card__currency">BYN</span>
+
+                </a>
+                <a href="#" class="product-card">
+                    <div class="img">
+                        <span class="badge">Акция</span>
+                        <img src="./src/images/productPage/5a555e0c328257cecbf5f25018127e631105f881.jpg" alt="product-card-image">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="price">
+                            <p class="current-price">1760</p>
+                            <div class="old-price-container">
+                                <span class="currency">BYN</span>
                             </div>
-                            <span class="catalog-card__old">2&nbsp;450</span>
                         </div>
-                        <h2 class="catalog-card__title">Костюм вечерний с бабочкой</h2>
-                        <a class="catalog-card__view" href="productPage.html">Смотреть <span aria-hidden="true">→</span></a>
-                        <button type="button" class="catalog-card__cart">
+                        <p class="title">Костюм бежевый </p>
+                        <div class="link">
+                            <span>Смотреть</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                <path d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C15.8946 6.48043 16 6.73478 16 7C16 7.26522 15.8946 7.51957 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447715 8 0 7.55229 0 7C0 6.44772 0.447715 6 1 6L12.5858 6L8.29289 1.70711C7.90237 1.31658 7.90237 0.683417 8.29289 0.292893Z" fill="#ACB7CC"/>
+                            </svg>
+                        </div>
+                        <button>
                             В корзину
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.1421 4L6.00913 16.1357C6.02271 16.2358 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.8889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2873L21.9578 6.28735C22.0487 5.98457 21.991 5.65668 21.8023 5.40307C21.6136 5.14946 21.3161 5 21 5H6.31948L5.99058 2.86219C5.97826 2.77281 5.95413 2.6872 5.91981 2.60698C5.85751 2.4609 5.76213 2.33437 5.64429 2.23519C5.53497 2.143 5.40561 2.07382 5.26367 2.03513C5.17434 2.01066 5.0806 1.99841 4.9847 2H3C2.44772 2 2 2.44772 2 3C2 3.55228 2.44772 4 3 4H4.1421ZM7.85794 15L6.62717 7H19.656L17.256 15H7.85794Z" fill="#318AFF"/><path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#318AFF"/><path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#318AFF"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M4.1421 4.00002L6.00913 16.1357C6.02271 16.2359 6.05113 16.3313 6.0921 16.4198C6.21543 16.6861 6.45246 16.889 6.74088 16.9661C6.82899 16.9898 6.92133 17.0016 7.01578 17H18C18.4416 17 18.8309 16.7103 18.9578 16.2874L21.9578 6.28736C22.0487 5.98459 21.991 5.65669 21.8023 5.40308C21.6136 5.14948 21.3161 5.00002 21 5.00002H6.31948L5.99058 2.86221C5.97826 2.77282 5.95413 2.68721 5.91981 2.607C5.85751 2.46092 5.76213 2.33439 5.64429 2.23521C5.53497 2.14302 5.40561 2.07384 5.26367 2.03514C5.17434 2.01068 5.0806 1.99842 4.9847 2.00002H3C2.44772 2.00002 2 2.44773 2 3.00002C2 3.5523 2.44772 4.00002 3 4.00002H4.1421ZM7.85794 15L6.62717 7.00002H19.656L17.256 15H7.85794Z" fill="#0061DF"/>
+                                <path d="M10 20C10 21.1046 9.10457 22 8 22C6.89543 22 6 21.1046 6 20C6 18.8954 6.89543 18 8 18C9.10457 18 10 18.8954 10 20Z" fill="#0061DF"/>
+                                <path d="M19 20C19 21.1046 18.1046 22 17 22C15.8954 22 15 21.1046 15 20C15 18.8954 15.8954 18 17 18C18.1046 18 19 18.8954 19 20Z" fill="#0061DF"/>
+                            </svg>
                         </button>
                     </div>
-                </article>
+
+                </a>
             </div>
+            <a class="show-more" href="#">
+                Смотреть все
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                    <path d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C15.8946 6.48043 16 6.73478 16 7C16 7.26522 15.8946 7.51957 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447715 8 0 7.55229 0 7C0 6.44772 0.447715 6 1 6L12.5858 6L8.29289 1.70711C7.90237 1.31658 7.90237 0.683417 8.29289 0.292893Z" fill="#F9FAFB"/>
+                </svg>
+            </a>
+            <ul class="pagination">
+                <li ><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
         </div>
     </section>
 
@@ -592,5 +840,6 @@
 </footer>
 <script src="./catalog.js"></script>
 <script src="./theme.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>

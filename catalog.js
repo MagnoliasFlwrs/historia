@@ -122,27 +122,38 @@
         });
     });
 
-    const mobileToggles = document.querySelectorAll('.catalog-mobile-toggle');
+    const mobileFilter = document.querySelector('.catalog-mobile-filter');
+    const mobileBar = document.querySelector('.catalog-mobile-bar');
+    const mobileBarChevron = document.querySelector('.catalog-mobile-bar__chevron');
     const mobilePanel = document.querySelector('.catalog-mobile-panel');
+    const mobileReset = document.querySelector('.catalog-mobile-reset');
     const setMobilePanelOpen = (open) => {
         if (!mobilePanel) return;
         mobilePanel.hidden = !open;
-        mobileToggles.forEach((btn) => {
-            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-            btn.textContent = open ? '−' : '+';
-        });
+        mobileBar?.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (mobileBarChevron) mobileBarChevron.textContent = open ? '−' : '+';
+        if (mobileReset) mobileReset.hidden = !open;
+        mobileFilter?.classList.toggle('is-open', open);
     };
-    if (mobileToggles.length && mobilePanel) {
-        mobileToggles.forEach((btn) => {
-            btn.addEventListener('click', () => {
+    const toggleMobilePanelFromBar = (e) => {
+        if (!mobilePanel || !mobileBar) return;
+        if (e.target instanceof Element && e.target.closest('.catalog-mobile-reset')) return;
+        setMobilePanelOpen(mobilePanel.hidden);
+    };
+    if (mobilePanel && mobileBar) {
+        mobileBar.addEventListener('click', toggleMobilePanelFromBar);
+        mobileBar.addEventListener('keydown', (e) => {
+            if (e.target !== mobileBar) return;
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
                 setMobilePanelOpen(mobilePanel.hidden);
-            });
+            }
         });
     }
 
-    const mobileReset = document.querySelector('.catalog-mobile-reset');
     if (mobileReset && mobilePanel) {
-        mobileReset.addEventListener('click', () => {
+        mobileReset.addEventListener('click', (e) => {
+            e.stopPropagation();
             mobilePanel.querySelectorAll('input[type="checkbox"]').forEach((cb) => {
                 cb.checked = false;
             });
